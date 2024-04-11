@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Ma première application Vue.js !</h1>
+        <ul>
+            <li> Pommes: {{ message }} </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Bonjour OpenClassrooms', // String
+                answerToLife: 42, // Number
+                groceries: ['Pommes', 'Bananes', 'Noix de coco'], // Array
+                timeForLunch: false, // Boolean
+                info: { // Object
+                    topic: 'VueJS',
+                    length: 5
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
